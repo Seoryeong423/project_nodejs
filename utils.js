@@ -31,3 +31,20 @@ console.log(validator.isURL('https://www.naver.com'))
 
 const chalk = require('chalk')
 console.log(chalk.bold.yellow.inverse('Success!'))
+
+//
+
+const msg = getNotes()
+console.log(msg)
+ 
+console.log(chalk.red('Success'))
+
+console.log(process.argv[2])
+
+//
+
+if (command === 'add') {
+    console.log('➕ Adding note!')
+} else if (command === 'remove') {
+    console.log('➖ Removing note!')
+}
